@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Sample {
+	    public static int cal(int a,int b,int c)
+	{
+	    
+	    int d=c/10;
+	    c=c+1;
+	    return c;
+	}
+		public static void main(String[] args) {
+		    
+			int moneyspent,priceofitem,tagstoreturn;
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the amount spent");
+			moneyspent=sc.nextInt();
+			System.out.println("Enter price of an item");
+			priceofitem=sc.nextInt();
+			System.out.println("No.of items bought");
+			tagstoreturn=sc.nextInt();
+			
+			int d=cal(moneyspent,priceofitem,tagstoreturn);
+			System.out.println("The total number of items (purchased + free items) :"+d);
+			
+		}
+	}
