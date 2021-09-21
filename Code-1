@@ -6,7 +6,7 @@ public class Sample {
 	    if(c>=10)
 	    {
 	    int d=c/10;
-	    c=c+1;
+	    c=c+d;
 	    return c;
 	    }
 	    else 
