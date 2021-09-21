@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main {
+   
+   public static void main(String[] args) {
+      
+Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the day medicine is taken on : ");
+        int today = sc.nextInt();
+
+System.out.print("Next dose to be taken after : ");
+    int nextdose = sc.nextInt ();
+        int nextdoseday = 0;
+        if (nextdose >= 0)
+            nextdoseday = (today + nextdose)% 7 ;             
+String doseday = null;
+
+switch (nextdoseday) {
+    case 1 :
+        doseday = "Sunday" ;
+        break;
+    case 2 :
+        doseday = "Monday";
+        break;
+    case 3 :
+        doseday = "Tuesday";
+        break;
+    case 4 : 
+        doseday = "Wednesday";
+        break;
+    case 5 : 
+        doseday = "Thrusday";
+        break;
+    case 6 :
+        doseday = "Friday";
+        break;
+    case 7 :
+        doseday = "Saturday";
+        break;
+}
+
+System.out.println("Your next dose should be taken on:"+doseday);
+
+}
+}
